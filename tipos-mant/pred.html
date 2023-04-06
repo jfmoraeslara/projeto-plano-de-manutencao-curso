@@ -28,7 +28,7 @@
                         <option>Wanderley Silva</option>
                     </optgroup>        
                 </select>            
-        </fieldset><br>
+        </fieldset>
 
         <h3>Acompanhamento em tempo real:</h3>    
         <fieldset>
@@ -45,7 +45,7 @@
                     </thead>
                 </table>            
             </div>          
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Ruído</legend>
@@ -61,7 +61,7 @@
                     </thead>
                 </table>            
             </div>      
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Temperatura</legend>
@@ -77,7 +77,7 @@
                     </thead>
                 </table>            
             </div>             
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Pressão</legend>
@@ -93,7 +93,7 @@
                     </thead>
                 </table>            
             </div>             
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Alteração de desempenho</legend>                          
@@ -105,7 +105,7 @@
                         <option>Motor C</option>
                         <option>Motor D</option>
                     </select>         
-        </fieldset> <br>
+        </fieldset>
 
         <fieldset>
             <legend>Inicio da alteração</legend> 
@@ -113,7 +113,7 @@
             <input type="date" name="dataf" id="idataf">            
             <label for="ihoraf">Horas: </label>
             <input type="time" name="horaf" id="ihoraf"> 
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Tipo de alteração</legend>
@@ -121,21 +121,21 @@
             <input type="checkbox" name="correia" id="icorreia"> <label for="icorreia">Ruído</label> <br>
             <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">Temperatura</label> <br>
             <input type="checkbox" name="rolam" id="irolam"> <label for="irolam">Pressão</label> <br>            
-        </fieldset><br>
+        </fieldset>
         
         <fieldset id="emergencia">
             <legend>Impacto no processo?</legend>
             <input type="radio" name="impro" id="iimpro"> <label for="iimpro">Sim</label>
             <input type="radio" name="impro" id="inimpro"> <label for="inimpro">Não</label>                       
-        </fieldset><br>
+        </fieldset>
 
         <fieldset id="emergencia">
             <legend>Necessária deslocar uma equipe de manutenção?</legend>
             <input type="radio" name="manu" id="imanusim"> <label for="imanusim">Sim</label>
             <input type="radio" name="manu" id="imanunao"> <label for="imanunao">Não</label>                       
-        </fieldset><br>        
+        </fieldset>        
 
-        <fieldset>
+        <fieldset id="observacao">
             <legend>Problema normalizado</legend>
             <label for="idataf">Data: </label>
             <input type="date" name="dataf" id="idataf">            
@@ -145,7 +145,7 @@
         
         <p>            
             <label for="iobs"><b>Observações:</b></label><br>
-            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+            <textarea name="msg" id="iobs" cols="50" rows="3"></textarea>
         </p>
         
         <fieldset>
@@ -154,7 +154,7 @@
             <input type="range" name="num" id="inum" min="0" max="10" value="5"
             oninput="ival.innerHTML = Number(inum.value)">
             <output id="ival">5</output>
-        </fieldset><br> 
+        </fieldset> 
 
         <p>
             <input id="enviar" type="submit" value="Enviar">

@@ -14,7 +14,7 @@
             <legend>Tipo de manutenção</legend>
             <input type="radio" name="manutencao" id="iplan"> <label for="iplan">Planejada</label>
             <input type="radio" name="manutencao" id="inplan"> <label for="inplan">Não planejada</label>
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Setor da manutenção</legend>                            
@@ -39,16 +39,17 @@
                         <option>Sala de reuniões</option>
                     </optgroup>        
                 </select>            
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Centro de trabalho</legend>
             <input type="radio" name="centro" id="imatriz"> <label for="imatriz">1300 - Matriz</label>
             <input type="radio" name="centro" id="ireg"> <label for="ireg">1500 - Regional</label>
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
-            <legend>Equipe de trabalho</legend>                         
+            <legend>Equipe de trabalho</legend>
+                <p>             
                 <label for="iequip">Mão de obra</label>
                 <select name="equipe" id="iequip">        
                     <option value="" selected>Escolha</option>
@@ -75,7 +76,7 @@
                     <option>Arlequina Harley</option>
                     <option>Bane</option>                                 
                 </select>           
-        </fieldset><br>
+        </fieldset>
         
         <fieldset>
             <legend>Início do trabalho</legend> 
@@ -83,32 +84,32 @@
             <input type="date" name="data" id="idata">            
             <label for="ihora">Horas: </label>
             <input type="time" name="hora" id="ihora"> 
-        </fieldset><br>
+        </fieldset>
         
         <fieldset>
             <legend>Parada de máquina</legend>
             <input type="radio" name="parada" id="icpar"> <label for="icpar">Sim</label>
             <input type="radio" name="parada" id="ispar"> <label for="ispar">Não</label>
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Impacto no processo</legend>
             <input type="radio" name="impacto" id="icimp"> <label for="icimp">Sim</label>
             <input type="radio" name="impacto" id="isimp"> <label for="isimp">Não</label>
-        </fieldset><br>
+        </fieldset>
 
-        <fieldset>
+        <fieldset id="observacao">
             <legend>Foram realizados os reparos abaixos na máquina?</legend>
             <input type="checkbox" name="oleo" id="ioleo"> <label for="ioleo">Troca de óleo</label><br>
             <input type="checkbox" name="correia" id="icorreia"> <label for="icorreia">Troca da correia</label> <br>
             <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">Troca de filtro</label> <br>
             <input type="checkbox" name="rolam" id="irolam"> <label for="irolam">Troca de rolamentos</label> <br>
-            <input type="checkbox" name="nenhum" id="inenhum"> <label for="inenhum">Nenhuma troca necessária</label> <br>
-        </fieldset>       
+            <input type="checkbox" name="nenhum" id="inenhum"> <label for="inenhum">Nenhuma troca necessária</label>
+        </fieldset>      
 
         <p>            
             <label for="imsg"><b>Descrição do serviço</b></label><br>
-            <textarea name="msg" id="imsg" cols="74" rows="5"></textarea>
+            <textarea name="msg" id="imsg" cols="50" rows="5"></textarea>
         </p>
 
         <fieldset>
@@ -117,7 +118,7 @@
             <input type="date" name="dataf" id="idataf">            
             <label for="ihoraf">Horas: </label>
             <input type="time" name="horaf" id="ihoraf"> 
-        </fieldset><br>
+        </fieldset>
         
             <fieldset>
                 <legend>Serviço realizado com sucesso?</legend>
@@ -125,9 +126,9 @@
                 <input type="range" name="num" id="inum" min="0" max="10" value="5"
                 oninput="ival.innerHTML = Number(inum.value)">
                 <output id="ival">5</output>
-            </fieldset><br>   
+            </fieldset>   
 
-        <p>
+        <p>           
             <input id="enviar" type="submit" value="Enviar">
             <input id="enviar" type="reset" value="Limpar">
         </p>

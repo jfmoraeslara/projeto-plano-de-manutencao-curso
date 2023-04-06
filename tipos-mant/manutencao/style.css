@@ -18,9 +18,18 @@ h2 {
     width: auto;
 }
 
+h3 {
+    margin-left: 5px;
+}
+
 legend {
     font-weight: bolder;
-    font-size: 1.04em;                  
+    font-size: 1.04em;
+    margin-bottom: 10px;                   
+}
+
+fieldset {
+    margin-bottom: 15px;
 }
 
 button {
@@ -54,12 +63,20 @@ img {
 }
 
 p {
-    margin: 8px 0px 15px 2px;   
+    margin: 0px 0px 15px 2px;
+}
+
+label {
+    margin-left: 2px;
 }
 
 #enviar {
     font-weight: bolder;
     font-size: 1.04em;
-    margin-left: 2.5px;
-    margin-bottom: 30px;
+    margin: 10px 0px 15px 1px;
+    
+}
+
+#observacao {
+    margin-bottom: 7px;
 }

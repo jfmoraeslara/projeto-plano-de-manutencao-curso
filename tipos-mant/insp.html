@@ -15,8 +15,8 @@
             <input type="checkbox" name="motorA" id="imotorA"> <label for="imotorA">Motor A</label><br>
             <input type="checkbox" name="motorB" id="imotorB"> <label for="imotorB">Motor B</label> <br>
             <input type="checkbox" name="motorC" id="imotorC"> <label for="imotorC">Motor C</label> <br>
-            <input type="checkbox" name="motorD" id="imotorD"> <label for="imotorD">Motor D</label> <br>            
-        </fieldset> <br>       
+            <input type="checkbox" name="motorD" id="imotorD"> <label for="imotorD">Motor D</label>            
+        </fieldset>       
 
         <fieldset>
             <legend>Setor da manutenção</legend>                            
@@ -26,23 +26,24 @@
                     <option>Elétricos</option>
                     <option>Motores</option> 
                 </select>            
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Centro de trabalho</legend>
             <input type="radio" name="centro" id="imatriz"> <label for="imatriz">1300 - Matriz</label>
             <input type="radio" name="centro" id="ireg"> <label for="ireg">1500 - Regional</label>
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
-            <legend>Equipe de trabalho</legend>                         
+            <legend>Equipe de trabalho</legend>
+                <p>                         
                 <label for="iequip">Mão de obra</label>
                 <select name="equipe" id="iequip">        
                     <option value="" selected>Escolha</option>
                     <option>Elétrico</option>
                     <option>Mecânico</option>
                     <option>Hidráulico</option>
-                    <option>Cívil</option>                                   
+                    <option>Cívil</option>
                 </select>
                 <p>
                     <label for="isup">Supervisor responsável</label>
@@ -60,9 +61,9 @@
                     <option>Marcão</option>
                     <option>Joselito</option>
                     <option>Tonhão</option>
-                    <option>Miguelzinho</option>                                   
+                    <option>Miguelzinho</option>
                 </select>           
-        </fieldset><br>
+        </fieldset>
         
         <fieldset>
             <legend>Início do trabalho</legend> 
@@ -70,25 +71,25 @@
             <input type="date" name="data" id="idata">            
             <label for="ihora">Horas: </label>
             <input type="time" name="hora" id="ihora"> 
-        </fieldset><br>
+        </fieldset>
         
         <fieldset>
             <legend>Equipamento</legend>
-            <input type="checkbox" name="motorA" id="imotorA"> <label for="imotorA">Motor A</label><br>            
-        </fieldset> <br> 
+            <input type="checkbox" name="motorA" id="imotorA"> <label for="imotorA">Motor A</label>            
+        </fieldset> 
 
-        <fieldset>
+        <fieldset id="observacao">
             <legend>Inspeção 1</legend>
             <input type="checkbox" name="oleo" id="ioleo"> <label for="ioleo">1. Troca de óleo</label><br>
             <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">2. Troca de filtro</label> <br>
             <input type="checkbox" name="correiaver" id="icorreiaver"> <label for="icorreiaver">3. Verificação da correia</label> <br>
             <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Verificação dos rolamentos</label> <br>
-            <input type="checkbox" name="bobina" id="ibobina"> <label for="inbobina">5. Ajuste da bobina</label> <br>
+            <input type="checkbox" name="bobina" id="ibobina"> <label for="inbobina">5. Ajuste da bobina</label>
         </fieldset>       
 
         <p>            
             <label for="iobs"><b>Observações:</b></label><br>
-            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+            <textarea name="msg" id="iobs" cols="50" rows="3"></textarea>
         </p>
 
         <fieldset>
@@ -97,25 +98,25 @@
             <input type="date" name="dataf" id="idataf">            
             <label for="ihoraf">Horas: </label>
             <input type="time" name="horaf" id="ihoraf"> 
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Equipamento</legend>
-            <input type="checkbox" name="motorB" id="imotorB"> <label for="imotorB">Motor B</label><br>            
-        </fieldset> <br> 
+            <input type="checkbox" name="motorB" id="imotorB"> <label for="imotorB">Motor B</label>            
+        </fieldset> 
 
-        <fieldset>
+        <fieldset id="observacao">
             <legend>Inspeção 2</legend>
             <input type="checkbox" name="oleo" id="ioleo"> <label for="ioleo">1. Troca de óleo</label><br>
             <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">2. Troca de filtro</label> <br>
             <input type="checkbox" name="correiaver" id="icorreiaver"> <label for="icorreiaver">3. Verificação da correia</label> <br>
             <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Verificação dos rolamentos</label> <br>
-            <input type="checkbox" name="bobina" id="ibobina"> <label for="inbobina">5. Ajuste da bobina</label> <br>
+            <input type="checkbox" name="bobina" id="ibobina"> <label for="inbobina">5. Ajuste da bobina</label>
         </fieldset>       
 
         <p>            
             <label for="iobs"><b>Observações:</b></label><br>
-            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+            <textarea name="msg" id="iobs" cols="50" rows="3"></textarea>
         </p>
 
         <fieldset>
@@ -124,25 +125,25 @@
             <input type="date" name="dataf" id="idataf">            
             <label for="ihoraf">Horas: </label>
             <input type="time" name="horaf" id="ihoraf"> 
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Equipamento</legend>
-            <input type="checkbox" name="motorC" id="imotorC"> <label for="imotorC">Motor C</label><br>            
-        </fieldset> <br> 
+            <input type="checkbox" name="motorC" id="imotorC"> <label for="imotorC">Motor C</label>           
+        </fieldset> 
 
-        <fieldset>
+        <fieldset id="observacao">
             <legend>Inspeção 3</legend>
             <input type="checkbox" name="oleo" id="ioleo"> <label for="ioleo">1. Troca de óleo</label><br>
             <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">2. Troca de filtro</label> <br>
             <input type="checkbox" name="correiaver" id="icorreiaver"> <label for="icorreiaver">3. Verificação da correia</label> <br>
             <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Verificação dos rolamentos</label> <br>
-            <input type="checkbox" name="bobina" id="ibobina"> <label for="inbobina">5. Ajuste da bobina</label> <br>
+            <input type="checkbox" name="bobina" id="ibobina"> <label for="inbobina">5. Ajuste da bobina</label>
         </fieldset>       
 
         <p>            
             <label for="iobs"><b>Observações:</b></label><br>
-            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+            <textarea name="msg" id="iobs" cols="50" rows="3"></textarea>
         </p>
 
         <fieldset>
@@ -151,25 +152,25 @@
             <input type="date" name="dataf" id="idataf">            
             <label for="ihoraf">Horas: </label>
             <input type="time" name="horaf" id="ihoraf"> 
-        </fieldset><br>
+        </fieldset>
 
         <fieldset>
             <legend>Equipamento</legend>
-            <input type="checkbox" name="motorD" id="imotorD"> <label for="imotorD">Motor D</label><br>            
-        </fieldset> <br> 
+            <input type="checkbox" name="motorD" id="imotorD"> <label for="imotorD">Motor D</label>            
+        </fieldset> 
 
-        <fieldset>
+        <fieldset id="observacao">
             <legend>Inspeção 4</legend>
             <input type="checkbox" name="oleo" id="ioleo"> <label for="ioleo">1. Troca de óleo</label><br>
             <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">2. Troca de filtro</label> <br>
             <input type="checkbox" name="correiaver" id="icorreiaver"> <label for="icorreiaver">3. Verificação da correia</label> <br>
             <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Verificação dos rolamentos</label> <br>
-            <input type="checkbox" name="bobina" id="ibobina"> <label for="ibobina">5. Ajuste da bobina</label> <br>
+            <input type="checkbox" name="bobina" id="ibobina"> <label for="ibobina">5. Ajuste da bobina</label>
         </fieldset>       
 
         <p>            
             <label for="iobs"><b>Observações:</b></label><br>
-            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+            <textarea name="msg" id="iobs" cols="50" rows="3"></textarea>
         </p>
 
         <fieldset>
@@ -178,7 +179,7 @@
             <input type="date" name="dataf" id="idataf">            
             <label for="ihoraf">Horas: </label>
             <input type="time" name="horaf" id="ihoraf"> 
-        </fieldset><br>
+        </fieldset>
         
             <fieldset>
                 <legend>Todos os serviços realizados conforme programado?</legend>
@@ -186,7 +187,7 @@
                 <input type="range" name="num" id="inum" min="0" max="10" value="5"
                 oninput="ival.innerHTML = Number(inum.value)">
                 <output id="ival">5</output>
-            </fieldset><br>      
+            </fieldset>      
 
         <p>
             <input id="enviar" type="submit" value="Enviar">
