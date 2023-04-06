@@ -32,11 +32,6 @@ fieldset {
     margin-bottom: 15px;
 }
 
-button {
-    font-size: 0.85em;
-    margin: 5px 0px 4px 0px;            
-}
-
 option {
     font-size: 1.04em;
 }
@@ -66,15 +61,14 @@ p {
     margin: 0px 0px 15px 2px;
 }
 
-label {
-    margin-left: 2px;
+#dh {
+    margin: 0px;
 }
 
 #enviar {
     font-weight: bolder;
     font-size: 1.04em;
-    margin: 10px 0px 15px 1px;
-    
+    margin: 10px 0px 15px 1px;    
 }
 
 #observacao {
