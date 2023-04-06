@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota de Lunbrificação</title>
+    <link rel="stylesheet" href="manutencao/style.css">
+</head>
+<body>
+    <h2>Rota de lubrificação</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Equipamentos</legend>
+            <input type="checkbox" name="motorA" id="imotorA"> <label for="imotorA">Motor A</label><br>
+            <input type="checkbox" name="motorB" id="imotorB"> <label for="imotorB">Motor B</label> <br>
+            <input type="checkbox" name="motorC" id="imotorC"> <label for="imotorC">Motor C</label> <br>
+            <input type="checkbox" name="motorD" id="imotorD"> <label for="imotorD">Motor D</label> <br>            
+        </fieldset> <br>       
+
+        <fieldset>
+            <legend>Setor da manutenção</legend>                            
+                <label for="iset">Produção</label>
+                <select name="setor" id="iset">        
+                    <option value="" selected>Escolha</option>
+                    <option>Elétricos</option>
+                    <option>Motores</option> 
+                </select>            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Centro de trabalho</legend>
+            <input type="radio" name="centro" id="imatriz"> <label for="imatriz">1300 - Matriz</label>
+            <input type="radio" name="centro" id="ireg"> <label for="ireg">1500 - Regional</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Equipe de trabalho</legend>                         
+                <label for="iequip">Mão de obra</label>
+                <select name="equipe" id="iequip">        
+                    <option value="" selected>Escolha</option>
+                    <option>Elétrico</option>
+                    <option>Mecânico</option>
+                    <option>Hidráulico</option>
+                    <option>Cívil</option>                                   
+                </select>
+                <p>
+                    <label for="isup">Supervisor responsável</label>
+                    <select name="supervisor" id="isup">
+                        <option value="" selected>Escolha</option>
+                        <option>Trevor Philips</option>
+                        <option>Tracey de Santa</option>
+                        <option>Franklin Clinton</option>
+                        <option>Lamar Davis</option>
+                    </select>
+                </p>              
+                <label for="itec">Técnico responsável</label>
+                <select name="tecnico" id="itec">        
+                    <option value="" selected>Escolha</option>
+                    <option>Marcão</option>
+                    <option>Joselito</option>
+                    <option>Tonhão</option>
+                    <option>Miguelzinho</option>                                
+                </select>           
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Início do trabalho</legend> 
+            <label for="idata">Data: </label>
+            <input type="date" name="data" id="idata">            
+            <label for="ihora">Horas: </label>
+            <input type="time" name="hora" id="ihora"> 
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Equipamento</legend>
+            <input type="checkbox" name="motorA" id="imotorA"> <label for="imotorA">Motor A</label><br>            
+        </fieldset> <br> 
+
+        <fieldset>
+            <legend>Lubrificação 1</legend>
+            <input type="checkbox" name="oleolub" id="ioleolub"> <label for="ioleolub">1. Troca de óleo</label><br>
+            <input type="checkbox" name="filtrolub" id="ifiltrolub"> <label for="ifiltrolub">2. Troca de filtro</label> <br>
+            <input type="checkbox" name="correialub" id="icorreialub"> <label for="icorreialub">3. Lubrificação da correia</label> <br>
+            <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Graxa nos rolamentos</label> <br>
+            <input type="checkbox" name="freio" id="ifreio"> <label for="ifreio">5. Fuído de freio</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">6. Graxa no eixo principal</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">7. Graxa no eixo secundário</label> <br>
+        </fieldset>      
+
+        <p>            
+            <label for="iobs"><b>Observações:</b></label><br>
+            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+        </p>
+
+        <fieldset>
+            <legend>Fim do trabalho</legend> 
+            <label for="idataf">Data: </label>
+            <input type="date" name="dataf" id="idataf">            
+            <label for="ihoraf">Horas: </label>
+            <input type="time" name="horaf" id="ihoraf"> 
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Equipamento</legend>
+            <input type="checkbox" name="motorB" id="imotorB"> <label for="imotorB">Motor B</label><br>            
+        </fieldset> <br> 
+
+        <fieldset>
+            <legend>Lubrificação 2</legend>
+            <input type="checkbox" name="oleolub" id="ioleolub"> <label for="ioleolub">1. Troca de óleo</label><br>
+            <input type="checkbox" name="filtrolub" id="ifiltrolub"> <label for="ifiltrolub">2. Troca de filtro</label> <br>
+            <input type="checkbox" name="correialub" id="icorreialub"> <label for="icorreialub">3. Lubrificação da correia</label> <br>
+            <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Graxa nos rolamentos</label> <br>
+            <input type="checkbox" name="freio" id="ifreio"> <label for="ifreio">5. Fuído de freio</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">6. Graxa no eixo principal</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">7. Graxa no eixo secundário</label> <br>
+        </fieldset>         
+
+        <p>            
+            <label for="iobs"><b>Observações:</b></label><br>
+            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+        </p>
+
+        <fieldset>
+            <legend>Fim do trabalho</legend> 
+            <label for="idataf">Data: </label>
+            <input type="date" name="dataf" id="idataf">            
+            <label for="ihoraf">Horas: </label>
+            <input type="time" name="horaf" id="ihoraf"> 
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Equipamento</legend>
+            <input type="checkbox" name="motorC" id="imotorC"> <label for="imotorC">Motor C</label><br>            
+        </fieldset> <br> 
+
+        <fieldset>
+            <legend>Lubrificação 3</legend>
+            <input type="checkbox" name="oleolub" id="ioleolub"> <label for="ioleolub">1. Troca de óleo</label><br>
+            <input type="checkbox" name="filtrolub" id="ifiltrolub"> <label for="ifiltrolub">2. Troca de filtro</label> <br>
+            <input type="checkbox" name="correialub" id="icorreialub"> <label for="icorreialub">3. Lubrificação da correia</label> <br>
+            <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Graxa nos rolamentos</label> <br>
+            <input type="checkbox" name="freio" id="ifreio"> <label for="ifreio">5. Fuído de freio</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">6. Graxa no eixo principal</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">7. Graxa no eixo secundário</label> <br>
+        </fieldset>   
+
+        <p>            
+            <label for="iobs"><b>Observações:</b></label><br>
+            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+        </p>
+
+        <fieldset>
+            <legend>Fim do trabalho</legend> 
+            <label for="idataf">Data: </label>
+            <input type="date" name="dataf" id="idataf">            
+            <label for="ihoraf">Horas: </label>
+            <input type="time" name="horaf" id="ihoraf"> 
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Equipamento</legend>
+            <input type="checkbox" name="motorD" id="imotorD"> <label for="imotorD">Motor D</label><br>            
+        </fieldset> <br> 
+
+        <fieldset>
+            <legend>Lubrificação 4</legend>
+            <input type="checkbox" name="oleolub" id="ioleolub"> <label for="ioleolub">1. Troca de óleo</label><br>
+            <input type="checkbox" name="filtrolub" id="ifiltrolub"> <label for="ifiltrolub">2. Troca de filtro</label> <br>
+            <input type="checkbox" name="correialub" id="icorreialub"> <label for="icorreialub">3. Lubrificação da correia</label> <br>
+            <input type="checkbox" name="rolamver" id="irolamver"> <label for="irolamver">4. Graxa nos rolamentos</label> <br>
+            <input type="checkbox" name="freio" id="ifreio"> <label for="ifreio">5. Fuído de freio</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">6. Graxa no eixo principal</label> <br>
+            <input type="checkbox" name="eixo" id="ieixo"> <label for="ieixo">7. Graxa no eixo secundário</label> <br>
+        </fieldset>   
+
+        <p>            
+            <label for="iobs"><b>Observações:</b></label><br>
+            <textarea name="msg" id="iobs" cols="74" rows="3"></textarea>
+        </p>
+
+        <fieldset>
+            <legend>Fim do trabalho</legend> 
+            <label for="idataf">Data: </label>
+            <input type="date" name="dataf" id="idataf">            
+            <label for="ihoraf">Horas: </label>
+            <input type="time" name="horaf" id="ihoraf"> 
+        </fieldset><br>
+        
+            <fieldset>
+                <legend>Todos os serviços realizados conforme programado?</legend>
+                <label for="inum">De 1 a 10</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5"
+                oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+            </fieldset><br>     
+
+        <p>
+            <input id="enviar" type="submit" value="Enviar">
+            <input id="enviar" type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corretiva</title>
+    <link rel="stylesheet" href="manutencao/style.css">
+</head>
+<body>
+    <h2>Corretiva</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Tipo de manutenção</legend>
+            <input type="radio" name="manutencao" id="iplan"> <label for="iplan">Planejada</label>
+            <input type="radio" name="manutencao" id="inplan"> <label for="inplan">Não planejada</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Setor da manutenção</legend>                            
+                <label for="iset">Setor</label>
+                <select name="setor" id="iset">
+        
+                    <option value="" selected>Escolha</option>
+                    <optgroup label="Produção">
+                        <option>Elétricos</option>
+                        <option>Motores</option>
+                        <option>Recebimento</option>
+                        <option>Saída</option>
+                    </optgroup>
+                    <optgroup label="Qualidade">
+                        <option>Laboratório</option>
+                        <option>Liberação</option>
+                        <option>Materiais</option>
+                    </optgroup>
+                    <optgroup label="Administrativo">
+                        <option>Escritórios</option>
+                        <option>Banheiros</option>
+                        <option>Sala de reuniões</option>
+                    </optgroup>        
+                </select>            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Centro de trabalho</legend>
+            <input type="radio" name="centro" id="imatriz"> <label for="imatriz">1300 - Matriz</label>
+            <input type="radio" name="centro" id="ireg"> <label for="ireg">1500 - Regional</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Equipe de trabalho</legend>                         
+                <label for="iequip">Mão de obra</label>
+                <select name="equipe" id="iequip">        
+                    <option value="" selected>Escolha</option>
+                    <option>Elétrico</option>
+                    <option>Mecânico</option>
+                    <option>Hidráulico</option>
+                    <option>Cívil</option>                                   
+                </select>
+                <p>
+                    <label for="isup">Supervisor responsável</label>
+                    <select name="supervisor" id="isup">
+                        <option value="" selected>Escolha</option>
+                        <option>Trevor Philips</option>
+                        <option>Tracey de Santa</option>
+                        <option>Franklin Clinton</option>
+                        <option>Lamar Davis</option>
+                    </select>
+                </p>              
+                <label for="itec">Técnico responsável</label>
+                <select name="tecnico" id="itec">        
+                    <option value="" selected>Escolha</option>
+                    <option>Coringa</option>
+                    <option>Batman</option>
+                    <option>Arlequina Harley</option>
+                    <option>Bane</option>                                 
+                </select>           
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Início do trabalho</legend> 
+            <label for="idata">Data: </label>
+            <input type="date" name="data" id="idata">            
+            <label for="ihora">Horas: </label>
+            <input type="time" name="hora" id="ihora"> 
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Parada de máquina</legend>
+            <input type="radio" name="parada" id="icpar"> <label for="icpar">Sim</label>
+            <input type="radio" name="parada" id="ispar"> <label for="ispar">Não</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Impacto no processo</legend>
+            <input type="radio" name="impacto" id="icimp"> <label for="icimp">Sim</label>
+            <input type="radio" name="impacto" id="isimp"> <label for="isimp">Não</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Foram realizados os reparos abaixos na máquina?</legend>
+            <input type="checkbox" name="oleo" id="ioleo"> <label for="ioleo">Troca de óleo</label><br>
+            <input type="checkbox" name="correia" id="icorreia"> <label for="icorreia">Troca da correia</label> <br>
+            <input type="checkbox" name="filtro" id="ifiltro"> <label for="ifiltro">Troca de filtro</label> <br>
+            <input type="checkbox" name="rolam" id="irolam"> <label for="irolam">Troca de rolamentos</label> <br>
+            <input type="checkbox" name="nenhum" id="inenhum"> <label for="inenhum">Nenhuma troca necessária</label> <br>
+        </fieldset>       
+
+        <p>            
+            <label for="imsg"><b>Descrição do serviço</b></label><br>
+            <textarea name="msg" id="imsg" cols="74" rows="5"></textarea>
+        </p>
+
+        <fieldset>
+            <legend>Fim do trabalho</legend> 
+            <label for="idataf">Data: </label>
+            <input type="date" name="dataf" id="idataf">            
+            <label for="ihoraf">Horas: </label>
+            <input type="time" name="horaf" id="ihoraf"> 
+        </fieldset><br>
+        
+            <fieldset>
+                <legend>Serviço realizado com sucesso?</legend>
+                <label for="inum">De 1 a 10</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5"
+                oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+            </fieldset><br>   
+
+        <p>
+            <input id="enviar" type="submit" value="Enviar">
+            <input id="enviar" type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

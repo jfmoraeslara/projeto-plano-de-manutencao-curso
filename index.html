@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img-manut/favicon.ico" type="image/x-icon">
+    <title>Ordem de manutenção</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;           
+        }        
+
+        header { /* Cabeçalho */ 
+            height: auto;
+            margin: 5px;
+            text-align: center;      
+        }
+
+        header > h1 {                     
+            font-size: 2.3em;
+            font-weight: normal;        
+            margin: 5px;
+            background-color: lightgray;            
+            text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.30);
+            text-align: center;
+            padding: 5px;
+        }
+        
+        div.bloco {
+            background-image: url("img-manut/manut.png");
+            height: 107px;
+            width: 220px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+        }
+               
+        p {
+            background-color: rgb(167, 213, 230);
+            font-size: 1.4em;
+            font-weight: normal;        
+            margin-bottom: 10px;
+            text-shadow: 1.4px 1.4px 0px rgba(0, 0, 0, 0.30);
+            margin: 10px;
+            padding: 5px 2px 5px 2px;
+        }
+        
+        fieldset {
+            background-color: rgb(167, 213, 230);
+            margin: 0px 10px 0px 10px;
+        }
+        
+        legend {
+            font-weight: bolder;
+            font-size: 1.04em;              
+        }
+
+        button {
+            font-size: 0.85em;
+            margin: 5px 0px 4px 0px;            
+        }        
+        
+    </style>   
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+    <p>MANUTENÇÃO 4ZAM1</p>
+    <header> <!-- Cabeçalho -->          
+        <h1>Abertura de OM</h1>
+        <h2>Número da OM 00001</h2>
+    </header>   
+    
+    <fieldset>
+        <legend>Selecione o tipo de manutenção</legend>
+        <fieldset>
+            <legend>Preventiva</legend>
+            <a href="tipos-mant/insp.html" target="_blank"><button>Rota de Inspeção</button></a><br>
+            <a href="tipos-mant/lubr.html" target="_blank"><button>Rota de Lubrificação</button></a>
+        </fieldset>
+        
+        <br><fieldset>
+            <a href="tipos-mant/corr.html" target="_blank"><button><b>Corretiva</b></button></a><br>
+            <a href="tipos-mant/pred.html" target="_blank"><button><b>Preditiva</b></button></a>
+        </fieldset>        
+    </fieldset>
+</body>
+</html>
