@@ -1,2 +1,1 @@
-Você explodiu a máquina!
-Você está demitido kkkkkkkkkkkkkkkk
+Manutenção concluída com sucesso!
